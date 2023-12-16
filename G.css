@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top left, rgb(0, 76, 255), rgb(0, 166, 255));
+    align-items: center;
+    font-family: monospace;
+}
+
+.name,
+.current {
+    font-weight: 100;
+    font-size: larger;
+}
+
+.play {
+    font-size: 6rem;
+    text-align: center;
+    padding: 10rem;
+    height: 90%;
+    background: linear-gradient(to top left, rgb(0, 166, 255), rgb(0, 255, 255));
+    align-items: center;
+}
+
+.player1 {
+    border-radius: 1rem 0 0 1rem;
+    opacity: 0.5;
+    border: 1px solid lightblue;
+}
+
+.player2 {
+    border-radius: 0 1rem 1rem 0;
+    opacity: 0.5;
+    border: 2px solid lightblue;
+}
+
+.btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 10rem;
+    font-size: 2rem;
+    box-shadow: 0.3rem 0.5rem rgba(0, 0, 0, 0.389);
+    padding: 0.7rem 2.5rem;
+    cursor: pointer;
+}
+
+.new {
+    top: 10rem;
+}
+
+.roll {
+    bottom: 20rem;
+    padding: 1.5rem;
+}
+
+.hold {
+    bottom: 10rem;
+}
+
+.current {
+
+    background: rgba(0, 0, 255, 0.723);
+    color: white;
+    font-size: 4rem;
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0rem;
+    transform: translate(40%, -100%);
+    transition: all 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+.player--active {
+    opacity: 1;
+}
+
+.dice {
+    height: 150px;
+    align-items: center;
+    transform: translte(-50%, 0);
+    position: absolute;
+}
